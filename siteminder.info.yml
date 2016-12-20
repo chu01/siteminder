@@ -1,0 +1,13 @@
+name: Siteminder Authentication
+type: module
+description: Allows users to authenticate to a Siteminder.
+configure: siteminder.admin_settings
+dependencies:
+ - user
+ - externalauth
+
+# Information added by Drupal.org packaging script on 2016-09-01
+version: '8.x.0'
+core: '8.x'
+project: 'siteminder'
+datestamp: 1473564300

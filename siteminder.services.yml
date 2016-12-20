@@ -1,0 +1,8 @@
+services:
+  siteminder.siteminderhelper:
+    class: Drupal\siteminder\Service\Siteminder
+    arguments: ['@config.factory']
+  siteminder.drupalauthentication:
+    class: Drupal\siteminder\Service\SiteminderDrupalAuthentication
+    arguments: ['@siteminder.siteminderhelper', '@config.factory', '@entity.manager', '@externalauth.externalauth', '@current_user']
+
